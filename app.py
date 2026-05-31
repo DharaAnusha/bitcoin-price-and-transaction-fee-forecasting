@@ -2,15 +2,20 @@ import streamlit as st
 
 st.title("Bitcoin Price and Transaction Fee Forecasting")
 
-st.header("Project Overview")
+st.header("Bitcoin Price Prediction")
 
-st.write("""
-This project uses LSTM models to forecast:
+value1 = st.number_input("Previous Bitcoin Price 1")
+value2 = st.number_input("Previous Bitcoin Price 2")
+value3 = st.number_input("Previous Bitcoin Price 3")
 
-1. Bitcoin Price
-2. Bitcoin Transaction Fee
+if st.button("Predict Bitcoin Price"):
+    st.success("Prediction functionality will be connected to LSTM model next.")
 
-Developed as an MCA Final Year Project.
-""")
+st.header("Transaction Fee Prediction")
 
-st.success("Deployment setup completed successfully!")
+fee1 = st.number_input("Previous Transaction Fee 1")
+fee2 = st.number_input("Previous Transaction Fee 2")
+fee3 = st.number_input("Previous Transaction Fee 3")
+
+if st.button("Predict Transaction Fee"):
+    st.success("Prediction functionality will be connected to LSTM model next.")
