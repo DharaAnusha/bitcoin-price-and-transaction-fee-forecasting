@@ -1,7 +1,6 @@
 streamlit
 pandas
-numpy
+numpy==1.26.4
 scikit-learn
-joblib
 matplotlib
-tensorflow
+tensorflow==2.15.0
